@@ -15,9 +15,19 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LS(T) &kp H &kp E &kp G &kp E &kp R &kp H &kp O &kp R &kp S &kp T &kp TAB &kp LS(D) &kp A &kp K &kp E &kp B &kp E &kp L &kp I &kp POUND &kp N3 &kp N0 &kp>;
+                <&kp LS(T) &kp H &kp E &kp G &kp E &kp R &kp H &kp O &kp R &kp S &kp T &kp TAB &kp LS(D) &kp A &kp K &kp E &kp B &kp E &kp L &kp I &kp POUND &kp N3 &kp N0>;
 
             label = "NEW_USER_PASS";
+        };
+
+        new_pass: new_pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(D) &kp A &kp K &kp E &kp B &kp E &kp L &kp I &kp POUND &kp N3 &kp N0>;
+
+            label = "NEW_PASS";
         };
     };
 
@@ -37,7 +47,7 @@
 &kp ESC         &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                      &kp N6     &kp N7   &kp N8       &kp N9   &kp N0    &kp GRAVE
 &kp TAB         &kp Q   &kp W   &kp E      &kp R     &kp T                                       &kp Y      &kp U    &kp I        &kp O    &kp P     &kp MINUS
 &kp LCTRL       &kp A   &kp S   &kp D      &kp F     &kp G                                       &kp H      &kp J    &kp K        &kp L    &kp SEMI  &kp SQT
-&new_user_pass  &kp Z   &kp X   &kp C      &kp V     &kp B          &mo 1             &mo 2      &kp N      &kp M    &kp COMMA    &kp DOT  &kp FSLH  &kp RSHFT
+&new_user_pass  &kp Z   &kp X   &kp C      &kp V     &kp B          &mo 1             &mo 2      &kp N      &kp M    &kp COMMA    &kp DOT  &kp FSLH  &new_pass
                                 &kp LCTRL  &kp LGUI  &kp BACKSPACE  &kp LEFT_SHIFT    &kp SPACE  &kp ENTER  &kp DEL  &lt 0 RG(L)
             >;
 
