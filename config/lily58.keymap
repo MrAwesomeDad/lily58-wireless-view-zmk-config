@@ -24,8 +24,8 @@
             #binding-cells = <0>;
             bindings = <&none &kp T &kp H &kp E &kp G &kp E &kp R &kp H &kp O &kp R &kp S &kp T &kp TAB &kp N2 &kp LS(N) &kp E &kp P &kp H &kp I &kp N2 &kp N5 &kp COLON &kp N2 &kp N6 &kp RET>;
             label = "UNPHESS";
-            wait-ms = <3>;
-            tap-ms = <3>;
+            wait-ms = <500>;
+            tap-ms = <500>;
         };
     };
 
