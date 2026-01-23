@@ -83,5 +83,17 @@
                            &kp LC(V)  &kp LEFT_GUI  &kp ENTER  &kp CAPS    &kp SPACE  &kp BACKSPACE    &kp DELETE    &kp LC(DOWN)
             >;
         };
+
+        extra_1 {
+            status = "reserved";
+        };
+
+        extra_2 {
+            status = "reserved";
+        };
+
+        extra_3 {
+            status = "reserved";
+        };
     };
 };
